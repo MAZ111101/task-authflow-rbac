@@ -7,11 +7,32 @@ A full-stack project implementing a basic authentication flow with role-based ac
 
 ---
 
-## 🚀 Features
-- User registration & login  
-- Role-based access control (Superadmin, User, etc.)  
-- JWT authentication  
-- Protected routes on backend & frontend  
+## 🚀 Features Implemnented
+**1. User Authentication**  
+
+- Registeration implemented with all fields and OTP verification sent via email.
+
+- Login implemented using Email and Password
+
+**2. Token Management (Superadmin, User, etc.)** 
+
+- Used JWT Access and Refresh tokens for authentication
+
+- Ensured secure token handling 
+
+**3. RBAC**
+
+- Super Admin credentials predefined
+
+- Super Admin is be able to create multiple user accounts
+
+- Users created by the Super Admin are be able to log in with their credentials
+
+**4. Admin Dashboard**  
+
+- Provided a simple web-based dashboard for the Super Admin
+  
+- Dashboard allows managing users for Super Admin (view, create, edit, delete) 
 
 ---
 
@@ -62,4 +83,5 @@ Frontend runs at: http://localhost:3000
 **3.** You can connect the generated .db file in DBeaver as a SQLite database.
 
 **4.** A Super Admin user is automatically seeded into the database for initial access.
+
 
