@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    SECRET_KEY = os.getenv("SECRET_KEY", "4c8a8f52f7b15aa2c39f90f6a7d13b66f9a23291c5475b8c9b913d837c6a5b2e")
+    SECRET_KEY = os.getenv("SECRET_KEY", "YOUR_SECRET_KEY")
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URI", "sqlite:///app.db")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "dd2f992a7e8ff5a42db8911f77b21848df18ebf84c3e4c293f28c372c1a6a9b1")
+    JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "YOUR_JWT_SECRET_KEY")
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=int(os.getenv("ACCESS_EXPIRE_MIN", "15")))
     JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=int(os.getenv("REFRESH_EXPIRE_DAYS", "7")))
     MAIL_SERVER = os.getenv("MAIL_SERVER")
