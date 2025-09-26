@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Flask
+instance/
+*.log
+
+# Testing / Coverage
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Env
+.env
